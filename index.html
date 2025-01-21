@@ -46,23 +46,32 @@
             bottom: 0;
         }
         
-  .about-container {
-            display: flex; /* Cria um layout flexível para alinhar os elementos lado a lado */
-            align-items: flex-start; /* Alinha a imagem e o texto no topo */
+          .about-container {
+            display: flex; /* Cria um layout flexível */
+            align-items: flex-start; /* Alinha os elementos ao topo */
             gap: 20px; /* Espaçamento entre imagem e texto */
+            max-width: 1000px; /* Limita a largura total da seção */
+            margin: 0 auto; /* Centraliza o conteúdo na página */
         }
 
         .about-container img {
-            width: 150px; /* Define a largura da imagem */
+            flex-shrink: 0; /* Impede que a imagem diminua */
+            width: 200px; /* Define uma largura fixa para a imagem */
             height: auto; /* Mantém a proporção da imagem */
-            border-radius: 10px; /* Adiciona cantos arredondados (opcional) */
+            border-radius: 10px; /* Adiciona cantos arredondados */
+        }
+
+        .about-container div {
+            flex: 1; /* Permite que o texto ocupe o restante do espaço */
         }
 
         .about-container p {
             text-align: justify; /* Justifica o texto */
+            line-height: 1.6; /* Melhora a legibilidade */
+            margin: 0;
         }
 
-        .about-container .btn {
+        .btn {
             display: inline-block;
             margin-top: 10px;
             padding: 8px 12px;
@@ -72,7 +81,7 @@
             border-radius: 5px; /* Cantos arredondados */
         }
 
-        .about-container .btn:hover {
+        .btn:hover {
             background-color: #0056b3; /* Cor ao passar o mouse */
         }
     </style>
