@@ -45,17 +45,35 @@
             width: 100%;
             bottom: 0;
         }
-        .btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
-            background: #003366;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
+        
+  .about-container {
+            display: flex; /* Cria um layout flexível para alinhar os elementos lado a lado */
+            align-items: flex-start; /* Alinha a imagem e o texto no topo */
+            gap: 20px; /* Espaçamento entre imagem e texto */
         }
-        .btn:hover {
-            background: #0055aa;
+
+        .about-container img {
+            width: 150px; /* Define a largura da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px; /* Adiciona cantos arredondados (opcional) */
+        }
+
+        .about-container p {
+            text-align: justify; /* Justifica o texto */
+        }
+
+        .about-container .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007BFF; /* Cor do botão */
+            color: white; /* Cor do texto */
+            text-decoration: none; /* Remove sublinhado */
+            border-radius: 5px; /* Cantos arredondados */
+        }
+
+        .about-container .btn:hover {
+            background-color: #0056b3; /* Cor ao passar o mouse */
         }
     </style>
 </head>
@@ -73,10 +91,16 @@
     </nav>
 
     <section id="about" class="about">
-        <h2>About Me:</h2>
-        <p>
-            Adjunct Professor at the Institute of Science and Technology, Federal University of São Paulo (UNIFESP). Postdoctoral researcher at the Institute of Biosciences, Letters and Exact Sciences, São Paulo State University Júlio de Mesquita Filho (IBILCE/Unesp), funded by FAPESP (completed in 2024). Completed two additional postdoctoral positions: one at IBILCE/Unesp (2023) and another at the Institute of Mathematical and Computer Sciences, University of São Paulo (ICMC/USP, 2022). Ph.D. in Computer Science and Computational Mathematics (2020) from ICMC/USP, M.S. in Mathematics (2015), and B.S. in Applied and Computational Mathematics (2013), both from IBILCE/Unesp. Achieved international recognition in the field of biometric authentication, being the vice-champion of the Liveness Detection Competition (LivDet) in 2021 and receiving an honorable mention in 2023, with the best accuracy in Challenge 2. Certified Microsoft Technology Associate (MTA) 98-361 - Software Development Fundamentals (C#). Served as a Professor of Higher Education I-A at the State Faculty of Technology of São Paulo (Fatec-SP) in São José do Rio Preto and as a temporary professor at the Federal University of São Carlos (UFSCar) in 2022. Has solid experience in signal processing and computational intelligence, with a focus on: Fraud detection in biometric systems; Bioinspired optimization strategies in computational problems; Analytical and visual pattern recognition.        </p>
-        <a class="btn" href="http://lattes.cnpq.br/6307490411436192" target="_blank">Lattes CV</a>
+         <h2>About Me:</h2>
+    <div class="about-container">
+        <img src="4x4_defesa.png" alt="Your Photo">
+        <div>
+            <p>
+                Adjunct Professor at the Institute of Science and Technology, Federal University of São Paulo (UNIFESP). Postdoctoral researcher at the Institute of Biosciences, Letters and Exact Sciences, São Paulo State University Júlio de Mesquita Filho (IBILCE/Unesp), funded by FAPESP (completed in 2024). Completed two additional postdoctoral positions: one at IBILCE/Unesp (2023) and another at the Institute of Mathematical and Computer Sciences, University of São Paulo (ICMC/USP, 2022). Ph.D. in Computer Science and Computational Mathematics (2020) from ICMC/USP, M.S. in Mathematics (2015), and B.S. in Applied and Computational Mathematics (2013), both from IBILCE/Unesp. Achieved international recognition in the field of biometric authentication, being the vice-champion of the Liveness Detection Competition (LivDet) in 2021 and receiving an honorable mention in 2023, with the best accuracy in Challenge 2. Certified Microsoft Technology Associate (MTA) 98-361 - Software Development Fundamentals (C#). Served as a Professor of Higher Education I-A at the State Faculty of Technology of São Paulo (Fatec-SP) in São José do Rio Preto and as a temporary professor at the Federal University of São Carlos (UFSCar) in 2022. Has solid experience in signal processing and computational intelligence, with a focus on: Fraud detection in biometric systems; Bioinspired optimization strategies in computational problems; Analytical and visual pattern recognition.
+            </p>
+            <a class="btn" href="http://lattes.cnpq.br/6307490411436192" target="_blank">Lattes CV</a>
+        </div>
+    </div>
     </section>
 
     <section id="contact" class="contact">
